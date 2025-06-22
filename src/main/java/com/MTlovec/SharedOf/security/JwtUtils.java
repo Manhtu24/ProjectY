@@ -1,8 +1,8 @@
-package com.MTlovec.SharedOf.service;
+package com.MTlovec.SharedOf.security;
+
 
 import com.MTlovec.SharedOf.model.User;
 
-public interface UserService {
+public interface JwtUtils {
     String generateToken(User user, Long expirationTimeInSeconds);
-    User findByEmail(String email);
 }
